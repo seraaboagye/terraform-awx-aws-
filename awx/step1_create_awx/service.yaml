@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks: 
+    - name: start specific service 
+      service:
+        name: httpd
+        state: restarted
+    bocome: yes
+    become_method: sudo
